@@ -17,7 +17,19 @@ public class ReservaService {
         return reservaRepository.findAll();
     }
 
+    public List<Reserva> obtenerReservasUsuario(Long id) {
+        return reservaRepository.findByUsuarioId(id);
+    }
+
+    public List<Reserva> obtenerReservasPelicula(Long id) {
+        return reservaRepository.findByPeliculaId(id);
+    }
+
     public Reserva crearReserva(Reserva reserva) {
         return reservaRepository.save(reserva);
+    }
+
+    public void eliminarReserva(Long id) {
+        reservaRepository.deleteById(id);
     }
 }

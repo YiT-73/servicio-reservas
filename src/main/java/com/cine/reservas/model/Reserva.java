@@ -27,4 +27,13 @@ public class Reserva {
     @NotNull
     private LocalDate fecha;
 
+    @NotNull
+    private  String pelicula_nombre;
+
+    @NotNull
+    private Long peliculaId;
+
+    @NotNull
+    private Long usuarioId;
+
 }
