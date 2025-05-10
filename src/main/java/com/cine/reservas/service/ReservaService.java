@@ -29,7 +29,7 @@ public class ReservaService {
         return reservaRepository.save(reserva);
     }
 
-    public void eliminarReserva(Long id) {
+    public void eliminarReserva(String id) {
         reservaRepository.deleteById(id);
     }
 }
